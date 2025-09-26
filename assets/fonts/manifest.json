@@ -1,0 +1,10 @@
+{
+  "expected_files": [
+    "Marcellus-Regular.woff2",
+    "WorkSans-Regular.woff2",
+    "WorkSans-Medium.woff2",
+    "WorkSans-SemiBold.woff2"
+  ],
+  "where_to_put": "/assets/fonts/",
+  "used_in_code": "index.html already has @font-face for these exact basenames."
+}

@@ -1,0 +1,37 @@
+/* ===== Les Ateliers du Cœur — styles externes ===== */
+
+/* Polices auto‑hébergées (WOFF2) — placer les fichiers dans /assets/fonts/ */
+@font-face { font-family: 'Marcellus'; src: url('/assets/fonts/Marcellus-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Work Sans'; src: url('/assets/fonts/WorkSans-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Work Sans'; src: url('/assets/fonts/WorkSans-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Work Sans'; src: url('/assets/fonts/WorkSans-SemiBold.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+
+/* Base */
+body { font-family: 'Work Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+h1, h2, h3 { font-family: 'Marcellus', serif; letter-spacing: .3px; font-feature-settings: "liga" 1, "kern" 1; text-rendering: optimizeLegibility; }
+h1, h2 { color:#111827; } /* titres plus sombres */
+
+/* Eyebrow */
+.eyebrow{ display:block; margin-bottom: .5rem; text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; line-height: 1.1; font-weight: 500; color: #8A4B5A; }
+@media (min-width: 768px) { .eyebrow{ font-size: .82rem; } }
+
+/* Lettrine */
+.dropcap:first-letter { float:left; font-family:'Marcellus',serif; font-weight:600; line-height:.85; margin:.08em .18em 0 0; color:#111827; }
+@media (min-width:768px){ .dropcap:first-letter{ font-size:clamp(2.6rem,6vw,4rem);} }
+
+/* Liens encrés */
+.link-ink { color:#8A4B5A; text-decoration-color:currentColor; text-underline-offset:3px; text-decoration-thickness:1.25px; }
+.link-ink:visited{ color:#733A47; }
+.link-ink:hover{ color:#6E3643; }
+.link-ink:focus-visible{ outline:2px solid #FF7D6E; outline-offset:2px; border-radius:2px; text-decoration-thickness:2px; }
+
+/* Accessibilité */
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#fff;padding:.5rem 1rem;border:2px solid #FF7D6E;border-radius:.5rem;z-index:50}
+
+/* Nav actif */
+nav a[aria-current="page"]{ text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; color:#111827; }
+
+/* Carousel helpers */
+.slide{display:none}
+.slide.active{display:block}
