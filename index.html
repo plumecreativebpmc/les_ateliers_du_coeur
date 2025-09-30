@@ -1,224 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Les Ateliers du Cœur — Art‑thérapie pour tous (7+)</title>
-  <meta name="description" content="Ateliers d’art-thérapie pour enfants, ados, adultes & seniors (7+). Domiciles, écoles, ALSH, EHPAD & résidences. Séances créatives dans un cadre rassurant. Contact rapide." />
-  <meta name="theme-color" content="#FF7D6E" />
-  <meta http-equiv="x-ua-compatible" content="IE=edge" />
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://les-ateliers-du-coeur.com/" />
-
-  <!-- Favicon (placeholder) -->
-  <link rel="icon" href="/assets/favicon.ico" sizes="any">
-  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Les Ateliers du Cœur — Art‑thérapie pour tous (7+)." />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Les Ateliers du Cœur" />
-  <meta property="og:title" content="Les Ateliers du Cœur — Art‑thérapie pour tous (7+)" />
-  <meta property="og:description" content="Ateliers d’art-thérapie pour enfants, ados, adultes & seniors (7+). Domiciles, écoles, ALSH, EHPAD & résidences. Séances créatives dans un cadre rassurant. Contact rapide." />
-  <meta property="og:url" content="https://les-ateliers-du-coeur.com/" />
-  <meta property="og:image" content="https://les-ateliers-du-coeur.com/assets/og-image.png" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Les Ateliers du Cœur — Art‑thérapie pour tous (7+)" />
-  <meta name="twitter:description" content="Ateliers d’art-thérapie pour enfants, ados, adultes & seniors (7+). Domiciles, écoles, ALSH, EHPAD & résidences. Séances créatives dans un cadre rassurant. Contact rapide." />
-  <meta name="twitter:image" content="https://les-ateliers-du-coeur.com/assets/og-image.png" />
-
-  <!-- Performance hints -->
-  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-  <link rel="preload" as="image" href="/assets/hero.jpg" fetchpriority="high" imagesrcset="/assets/hero.jpg 1x">
-
-  <!-- Palette & Tailwind (config AVANT CDN) -->
-  <script>
-    tailwind = { config: {
-      theme: { extend: {
-        colors: {
-          brand: { DEFAULT: '#FF7D6E', 600:'#FF7D6E', 700:'#E35F52' },
-          ink: '#1F2937',
-          paper: '#FFF2E5',
-          accent: '#8A4B5A'
-        }
-      }}
-    }};
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="stylesheet" href="/assets/styles.css">
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "52c66c9f9b3a4ecfa06fafe5f36d257b"}'></script><!-- End Cloudflare Web Analytics -->
+  ...
 </head>
 <body class="bg-paper text-ink antialiased">
-  <div id="progressBar" class="fixed top-0 left-0 h-1 bg-brand z-[70]" style="width:0%"></div>
-  <a class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[80] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-white focus:ring-2 focus:ring-brand focus:shadow" href="#contenu">Aller au contenu</a>
-
-  <!-- Barre d'annonce optionnelle -->
-  <div class="bg-brand/10 text-center text-sm py-2">✨ Demander une séance découverte gratuite ! <a class="inline-flex items-center rounded-full bg-brand text-white px-3 py-1 font-medium text-xs shadow-sm hover:bg-brand/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2" href="?page=contact">contactez‑moi</a></div>
-
-  <!-- Header -->
-  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-16">
-        <a href="?" class="group flex items-center gap-3" aria-label="Accueil — Les Ateliers du Cœur">
-          <span class="relative inline-flex items-center justify-center w-10 h-10 rounded-2xl bg-brand/10 ring-1 ring-brand/20 transition transform group-hover:scale-105">
-            <svg viewBox="0 0 64 64" class="w-6 h-6" aria-hidden="true">
-              <path class="fill-current text-brand" d="M32 56c-1.2 0-2.4-.4-3.3-1.1C16 45 8 37.7 8 27.7 8 20.6 13.6 15 20.7 15c4 0 7.8 1.8 10.3 4.7 2.5-2.9 6.3-4.7 10.3-4.7 7.1 0 12.7 5.6 12.7 12.7 0 10-8 17.3-20.7 27.2-.9.7-2.1 1.1-3.3 1.1z"/>
-              <circle class="fill-current text-accent" cx="46" cy="18" r="3"/>
-            </svg>
-          </span>
-        </a>
-        <nav class="hidden md:flex items-center gap-6" aria-label="Navigation principale">
-          <a href="?page=apropos" class="hover:text-accent/80">À propos</a>
-          <a href="?page=ateliers" class="hover:text-accent/80">Ateliers</a>
-          <a href="?page=approche" class="hover:text-accent/80">Approche</a>
-          <a href="?page=temoignages" class="hover:text-accent/80">Témoignages</a>
-          <a href="?page=ressources" class="hover:text-accent/80">Ressources</a>
-          <a href="?page=contact" class="rounded-xl bg-brand text-white px-4 py-2 hover:bg-brand/90">Contact</a>
-        </nav>
-        <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-300" aria-expanded="false" aria-controls="menuMobile" aria-label="Ouvrir le menu">☰</button>
-      </div>
-    </div>
-    <div id="menuMobile" class="md:hidden hidden border-t border-slate-200">
-      <nav class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex flex-col gap-2" aria-label="Navigation mobile">
-        <a href="?page=apropos" class="py-2">À propos</a>
-        <a href="?page=ateliers" class="py-2">Ateliers</a>
-        <a href="?page=approche" class="py-2">Approche</a>
-        <a href="?page=temoignages" class="py-2">Témoignages</a>
-        <a href="?page=ressources" class="py-2">Ressources</a>
-        <a href="?page=contact" class="py-2 rounded-xl bg-brand text-white text-center">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Accueil (home) -->
-  <main id="home-root">
-    <!-- Hero -->
-    <section class="bg-gradient-to-b from-paper to-paper" id="contenu">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <p class="eyebrow">Art‑thérapie tout public (7+)</p>
-          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Ateliers d'art‑thérapie pour toutes et pour tous</h1>
-          <p class="dropcap mt-4 text-lg leading-relaxed text-slate-700">
-            Des séances créatives et bienveillantes pour stimuler la mémoire et l'imagination, nourrir le lien social et améliorer la qualité de vie.
-          </p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="?page=contact" class="inline-flex items-center rounded-xl bg-brand text-white px-5 py-3 font-medium hover:bg-brand/90">Demander une séance découverte gratuite !</a>
-            <a href="?page=approche" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-medium hover:border-brand">Découvrir l'approche</a>
-          </div>
-          <p class="mt-2 text-sm text-slate-600">RDV découverte 20–30 min • sans engagement</p>
-          <div class="mt-6 flex items-center gap-4 text-sm text-slate-600">
-            <span>Suivez-moi</span>
-            <a href="https://www.instagram.com/les.ateliers.du.coeurs__" class="underline link-ink" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://www.linkedin.com/in/jaanaelle-marcelin-0b0a1118b" class="underline link-ink" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Bénéfices clés -->
-    <section aria-labelledby="benefices-title" class="py-20 md:py-28 border-t border-slate-200">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6">
-        <p class="eyebrow">Bénéfices</p>
-        <h2 id="benefices-title" class="text-2xl md:text-3xl font-bold">Des bénéfices concrets</h2>
-        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <article class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-            <h3 class="font-semibold">Exprimer autrement</h3>
-            <p class="mt-2 leading-relaxed text-slate-700">L’art‑thérapie offre une voie d’expression là où les mots manquent. Elle ouvre un dialogue sensible à travers les formes, les couleurs et les symboles, soutenant ainsi la communication au‑delà du langage verbal.</p>
-          </article>
-          <article class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-            <h3 class="font-semibold">Régulation émotionnelle</h3>
-            <p class="mt-2 leading-relaxed text-slate-700">Créer, c’est revenir à l’instant présent. Cette présence au geste et à la matière agit comme une modalité de la pleine conscience : dans un cadre thérapeutique, l’activité artistique diminue le stress et l’anxiété, nourrit l’estime de soi et réduit certains états dépressifs.</p>
-          </article>
-          <article class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-            <h3 class="font-semibold">Connaissance de soi</h3>
-            <p class="mt-2 leading-relaxed text-slate-700">Se découvrir, c’est explorer son identité et ses ressources. L’art‑thérapie favorise une meilleure compréhension de soi, aide à reconnaître les schémas de pensée ou d’action et soutient la construction d’une image de soi plus stable. Ainsi, les expériences vécues sont reformulées : non pas supprimées, mais réinterprétées dans le champ symbolique pour leur donner un sens nouveau.</p>
-          </article>
-          <article class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-            <h3 class="font-semibold">Partage & lien social</h3>
-            <p class="mt-2 leading-relaxed text-slate-700">En ouvrant des espaces de rencontre et d’écoute, où chacun peut s’exprimer et être entendu, l’art‑thérapie favorise la création de liens sociaux. Elle nourrit l’inclusion, la cohésion et le développement d’un sentiment d’appartenance à un collectif.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    
-
-    
-  </main>
-
-  <!-- Routed pages container -->
-  <main id="page-root" class="hidden max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-28"></main>
-
-  <!-- Templates for routed pages: À propos, Ressources, Contact -->
-  <template id="tpl-apropos">
-    <div class="grid gap-10">
-      <!-- Bloc À propos en mode paysage, presque pleine largeur -->
-      <div class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-        <p class="eyebrow">À propos</p>
-        <h2 class="text-2xl md:text-3xl font-bold">À propos</h2>
-        <p class="mt-4 leading-relaxed text-slate-700">Thérapeute spécialisée en création artistique, j’accompagne les personnes de tout âge et les structures d’accueil avec une approche créative, rassurante et structurée : un cadre clair, une adaptation continue et une attention particulière au suivi de chacun. Mes interventions, coconstruites avec les familles et les équipes, sont adaptées aux contextes (domiciles et structures).</p>
-      </div>
-      <!-- Bloc Informations en dessous, aligné à droite, dimension conservée (~1/2 colonne) -->
-      <div class="md:justify-self-end md:w-1/2">
-        <div class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-          <h3 class="font-semibold">Informations</h3>
-          <ul class="mt-3 grid gap-2 leading-relaxed text-slate-700">
-            <li>Basé à : Sofaïa</li>
-            <li>SIREN : 000 000 000</li>
-            <li>Zones d'intervention : Guadeloupe</li>
-            <li>Réseaux : <a class="underline link-ink" href="https://www.instagram.com/les.ateliers.du.coeurs__" target="_blank" rel="noopener noreferrer">Instagram</a>, <a class="underline link-ink" href="https://www.linkedin.com/in/jaanaelle-marcelin-0b0a1118b" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          </ul>
-          <div class="mt-6 text-sm leading-relaxed text-slate-700">
-            <p><strong>Besoin d'une brochure ?</strong> <a class="underline link-ink" href="/assets/brochure.pdf">Télécharger (PDF)</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </template>
-
-  <template id="tpl-ateliers">
-    <div>
-      <p class="eyebrow">Prestations</p>
-      <h2 class="text-2xl md:text-3xl font-bold">Ateliers proposés</h2>
-      <p class="mt-3 leading-relaxed text-slate-700">Pour les décideurs (familles, associations, ALSH, EHPAD) : documents fournis (devis, calendrier, objectifs, bilan de fin de session).</p>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <article class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-          <h3 class="font-semibold">ALSH & EHPAD</h3>
-          <p class="mt-2 leading-relaxed text-slate-700">Interventions ponctuelles, programmes hebdomadaires ou mensuels.</p>
-          <ul class="mt-3 list-disc pl-5 leading-relaxed text-slate-700">
-            <li>Groupes de 8–12 personnes</li>
-            <li>Matériel fourni</li>
-            <li>Compte-rendu pour l'équipe</li>
-          </ul>
-        </article>
-        <article class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-          <h3 class="font-semibold">Domicile</h3>
-          <p class="mt-2 leading-relaxed text-slate-700">Séances individuelles adaptées aux capacités et envies.</p>
-          <ul class="mt-3 list-disc pl-5 leading-relaxed text-slate-700">
-            <li>Un accompagnement intégré au cadre de vie habituel</li>
-            <li>Possibilité d’ateliers en famille ou avec un proche</li>
-            <li>Matériel fourni</li>
-          </ul>
-        </article>
-        <article class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-          <h3 class="font-semibold">Associations & collectivités</h3>
-          <p class="mt-2 leading-relaxed text-slate-700">Projets intergénérationnels, événements, sessions découvertes.</p>
-          <ul class="mt-3 list-disc pl-5 leading-relaxed text-slate-700">
-            <li>Ateliers favorisant le lien social et la créativité collective</li>
-            <li>Animation d'équipes</li>
-            <li>Tarifs solidaires possibles</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </template>
+  ...
 
   <template id="tpl-approche">
     <div class="grid md:grid-cols-2 gap-10 items-start">
@@ -226,7 +12,7 @@
         <p class="eyebrow">Méthode</p>
         <h2 class="text-2xl md:text-3xl font-bold">Un voyage créatif où l’art ouvre des espaces de rencontre et relie les histoires</h2>
         <p class="dropcap mt-4 leading-relaxed text-slate-700">Une approche qui utilise l’art comme support d’expression et d’accompagnement thérapeutique, dans un cadre rassurant, avec des outils variés (collage, peinture, modelage, écriture) adaptés aux envies et aux capacités de chacun.</p>
-        <div class="mt-4 leading-relaxed text-slate-700">
+        <div class="mt-4 leading-relaxed text-slate-700 max-w-none">
           <p>L’art-thérapie repose sur une posture d’écoute bienveillante, sans jugement, où le processus créatif compte davantage que le résultat.</p>
 
           <p class="mt-3">Un cadre sécurisant et confidentiel garantit stabilité et confiance, soutenu par l’utilisation de matériel simple, accessible et non toxique.</p>
@@ -247,281 +33,59 @@
     </div>
   </template>
 
-  <template id="tpl-temoignages">
-    <div>
-      <p class="eyebrow">Avis</p>
-      <h2 class="text-2xl md:text-3xl font-bold">Ils en parlent le mieux</h2>
-      <div id="carousel-temoignages" class="mt-8 relative" aria-live="polite">
-        <div class="slide active p-6 rounded-2xl bg-white ring-1 ring-slate-200 min-h-[140px] px-10 py-6 md:px-16" data-slide>
-          <blockquote class="leading-relaxed text-slate-700">“Ambiance apaisante, ateliers très appréciés par nos résidents.”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Directrice, EHPAD Les Tilleuls</figcaption>
-        </div>
-        <div class="slide hidden p-6 rounded-2xl bg-white ring-1 ring-slate-200 min-h-[140px] px-10 py-6 md:px-16" data-slide>
-          <blockquote class="leading-relaxed text-slate-700">“Mon fils de 8 ans a trouvé un espace rien qu’à lui pour créer et se poser. Il repart fier de ce qu’il fait !”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Mère d’un participant (8 ans)</figcaption>
-        </div>
-        <div class="slide hidden p-6 rounded-2xl bg-white ring-1 ring-slate-200 min-h-[140px] px-10 py-6 md:px-16" data-slide>
-          <blockquote class="leading-relaxed text-slate-700">“À l’école, nous avons noté plus de concentration et d’entraide après les séances. Un vrai plus pour la classe.”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Enseignante, école primaire</figcaption>
-        </div>
-        <div class="slide hidden p-6 rounded-2xl bg-white ring-1 ring-slate-200 min-h-[140px] px-10 py-6 md:px-16" data-slide>
-          <blockquote class="leading-relaxed text-slate-700">“En ALSH, les ateliers créent de la coopération dans le groupe. Les jeunes s’expriment autrement, dans le respect.”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Animatrice, ALSH municipal</figcaption>
-        </div>
-        <div class="slide hidden p-6 rounded-2xl bg-white ring-1 ring-slate-200 min-h-[140px] px-10 py-6 md:px-16" data-slide>
-          <blockquote class="leading-relaxed text-slate-700">“Adulte, j’y ai trouvé un espace pour souffler et mettre des mots et des couleurs sur ce que je traverse.”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Participant, 35 ans</figcaption>
-        </div>
-        <button type="button" data-prev class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full ring-1 ring-slate-300 bg-white/80 hover:bg-white" aria-label="Témoignage précédent">‹</button>
-        <button type="button" data-next class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full ring-1 ring-slate-300 bg-white/80 hover:bg-white" aria-label="Témoignage suivant">›</button>
-        <div class="mt-4 flex justify-center gap-2">
-          <button type="button" data-dot class="w-2.5 h-2.5 rounded-full bg-ink/40 opacity-100" aria-label="Aller au témoignage 1"></button>
-          <button type="button" data-dot class="w-2.5 h-2.5 rounded-full bg-ink/40 opacity-50" aria-label="Aller au témoignage 2"></button>
-          <button type="button" data-dot class="w-2.5 h-2.5 rounded-full bg-ink/40 opacity-50" aria-label="Aller au témoignage 3"></button>
-          <button type="button" data-dot class="w-2.5 h-2.5 rounded-full bg-ink/40 opacity-50" aria-label="Aller au témoignage 4"></button>
-          <button type="button" data-dot class="w-2.5 h-2.5 rounded-full bg-ink/40 opacity-50" aria-label="Aller au témoignage 5"></button>
-        </div>
-      </div>
-    </div>
-  </template>
-
-  <template id="tpl-ressources">
-    <div>
-      <p class="eyebrow">Ressources</p>
-      <h2 class="text-2xl md:text-3xl font-bold">Ressources</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <article class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-          <h3 class="font-semibold">Guide : démarrer un atelier</h3>
-          <p class="mt-2 leading-relaxed text-slate-700">Checklist matériel, sécurité, durée, objectifs.</p>
-          <a href="#" class="mt-3 inline-block underline link-ink">Lire</a>
-        </article>
-        <!-- Bloc 3 remonte en 2 -->
-        <article class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-          <h3 class="font-semibold">Travailler avec les familles</h3>
-          <p class="mt-2 leading-relaxed text-slate-700">Créer du lien et rassurer.</p>
-          <a href="#" class="mt-3 inline-block underline link-ink">Lire</a>
-        </article>
-        <!-- Bloc 2 descend en 3 -->
-        <article class="p-6 rounded-2xl bg-white ring-1 ring-slate-200">
-          <h3 class="font-semibold">Idées créatives pour Alzheimer</h3>
-          <p class="mt-2 leading-relaxed text-slate-700">Activités adaptées, repères et astuces.</p>
-          <a href="#" class="mt-3 inline-block underline link-ink">Lire</a>
-        </article>
-      </div>
-    </div>
-  </template>
-
-  <template id="tpl-contact">
-    <div class="grid md:grid-cols-2 gap-10 items-stretch">
-      <form class="p-6 rounded-2xl bg-white ring-1 ring-slate-200 h-full" method="POST" action="#">
-        <!-- Honeypot anti-spam -->
-        <input type="text" name="website" autocomplete="off" tabindex="-1" class="hidden" aria-hidden="true" />
-        <h2 class="text-2xl md:text-3xl font-bold">Contact</h2>
-        <div id="formStatus" class="hidden p-3 rounded-lg text-sm ring-1" role="status" aria-live="polite"></div>
-        <div class="mt-6 grid gap-4">
-          <label class="grid gap-1">
-            <span class="text-sm">Votre nom</span>
-            <input name="nom" required class="rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand/50" />
-            <p class="mt-1 text-sm text-red-600 hidden" id="err-nom"></p>
-          </label>
-          <label class="grid gap-1">
-            <span class="text-sm">E‑mail</span>
-            <input type="email" name="email" required class="rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand/50" />
-            <p class="mt-1 text-sm text-red-600 hidden" id="err-email"></p>
-          </label>
-          <label class="grid gap-1">
-            <span class="text-sm">Votre message</span>
-            <textarea name="message" rows="5" required class="rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand/50"></textarea>
-            <p class="mt-1 text-sm text-red-600 hidden" id="err-message"></p>
-          </label>
-          <label class="inline-flex items-center gap-2 text-sm text-slate-600">
-            <input type="checkbox" name="consent" required aria-describedby="rgpd-note" />
-            <span id="rgpd-note">J’accepte que ces informations soient utilisées pour me répondre. <a href="#rgpd" class="underline link-ink">En savoir plus</a>.</span>
-          </label>
-          <p class="mt-1 text-sm text-red-600 hidden" id="err-consent"></p>
-          <button class="rounded-xl bg-brand text-white px-5 py-3 font-medium hover:bg-brand/90" type="submit">Envoyer</button>
-        </div>
-        <p class="mt-3 text-sm leading-relaxed text-slate-700">Écrivez‑moi : <a class="underline link-ink" href="mailto:jaa.marcelin@gmail.com">jaa.marcelin@gmail.com</a></p>
-        <div class="mt-4 flex items-center gap-3">
-          <a href="https://www.instagram.com/les.ateliers.du.coeurs__" aria-label="Instagram" class="inline-flex items-center justify-center w-10 h-10 rounded-full ring-1 ring-slate-200 hover:ring-brand" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5a5.5 5.5 0 110 11 5.5 5.5 0 010-11zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.25-.75a1 1 0 110 2 1 1 0 010-2z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/jaanaelle-marcelin-0b0a1118b" aria-label="LinkedIn" class="inline-flex items-center justify-center w-10 h-10 rounded-full ring-1 ring-slate-200 hover:ring-brand" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8.5 8h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2 4 0 4.75 2.6 4.75 6V24h-4v-7c0-1.67-.03-3.83-2.33-3.83-2.34 0-2.7 1.82-2.7 3.7V24h-4V8z"/></svg>
-          </a>
-        </div>
-        <p class="mt-4 text-center italic text-slate-600">Ensemble, donnons forme à ce qui cherche à s'exprimer.</p>
-      </form>
-      <div class="p-6 rounded-2xl bg-white ring-1 ring-slate-200 h-full">
-        <h3 class="font-semibold">FAQ</h3>
-        <div class="mt-4 grid gap-6 md:gap-8">
-          <details class="group p-3 md:p-4 rounded-lg ring-1 ring-slate-200">
-            <summary class="cursor-pointer font-medium">Comment se déroulent les ateliers ?</summary>
-            <div class="mt-2 leading-relaxed text-slate-700">Séances de 60–90 min, avec accueil, activité créative adaptée (peinture, collage, modelage…), temps de partage et rangement. Cycle possible sur 4–8 séances avec objectifs définis.</div>
-          </details>
-          <details class="group p-3 md:p-4 rounded-lg ring-1 ring-slate-200">
-            <summary class="cursor-pointer font-medium">Où intervenez‑vous ?</summary>
-            <div class="mt-2 leading-relaxed text-slate-700">En EHPAD, résidences autonomie, associations, collectivités et à domicile, dans votre département et alentours (sur devis).</div>
-          </details>
-          <details class="group p-3 md:p-4 rounded-lg ring-1 ring-slate-200">
-            <summary class="cursor-pointer font-medium">Le matériel est‑il fourni ?</summary>
-            <div class="mt-2 leading-relaxed text-slate-700">Oui, matériel non toxique et adapté, inclus dans la plupart des prestations. Besoins spécifiques possibles selon projet.</div>
-          </details>
-          <details class="group p-3 md:p-4 rounded-lg ring-1 ring-slate-200">
-            <summary class="cursor-pointer font-medium">Quels sont les tarifs ?</summary>
-            <div class="mt-2 leading-relaxed text-slate-700">Tarification selon le format (individuel/collectif), la durée et le déplacement. Un devis clair est fourni avant toute intervention.</div>
-          </details>
-          <details class="group p-3 md:p-4 rounded-lg ring-1 ring-slate-200">
-            <summary class="cursor-pointer font-medium">Politique d’annulation</summary>
-            <div class="mt-2 leading-relaxed text-slate-700">Sans frais jusqu’à 48 h avant. Au‑delà, des frais peuvent s’appliquer pour couvrir la planification et le matériel prévu.</div>
-          </details>
-        </div>
-      </div>
-    </div>
-  </template>
-  <!-- Page Politique de confidentialité dédiée -->
-  <template id="tpl-confidentialite">
-    <div class="prose max-w-none">
-      <p class="eyebrow">Confidentialité</p>
-      <h2 class="text-2xl md:text-3xl font-bold">Politique de confidentialité</h2>
-      <p class="mt-3 leading-relaxed text-slate-700 text-sm">Cette politique explique comment nous traitons vos données personnelles lorsque vous utilisez ce site et lorsque vous nous contactez.</p>
-
-      <h3 class="mt-6 font-semibold">Responsable & contact</h3>
-      <p class="leading-relaxed text-slate-700 text-sm">Les Ateliers du Cœur — Contact : <a class="underline link-ink" href="mailto:privacy@votre-domaine.fr">privacy@votre-domaine.fr</a>. Droits RGPD : accès, rectification, effacement, opposition, limitation, portabilité. Réclamation : <a class="underline link-ink" href="https://www.cnil.fr/">CNIL</a>.</p>
-
-      <h3 class="mt-6 font-semibold">Finalités & bases légales</h3>
-      <ul class="list-disc pl-5 leading-relaxed text-slate-700 text-sm">
-        <li>Répondre à vos messages (art. 6‑1‑b RGPD).</li>
-        <li>Prise de rendez‑vous et suivi (art. 6‑1‑b).</li>
-        <li>Mesure d’audience agrégée (intérêt légitime, art. 6‑1‑f).</li>
-        <li>Consentement si des options facultatives sont activées (art. 6‑1‑a).</li>
-      </ul>
-
-      <h3 class="mt-6 font-semibold">Données, destinataires, conservation</h3>
-      <p class="leading-relaxed text-slate-700 text-sm">Données : identité (nom, email) et contenu du message. Destinataires : éditeur et sous‑traitants techniques habilités (hébergeur, messagerie). Conservation : messages 24 mois, journaux techniques 12 mois, mesures d’audience 25 mois.</p>
-
-      <h3 class="mt-6 font-semibold">Sécurité & transferts</h3>
-      <p class="leading-relaxed text-slate-700 text-sm">Mesures proportionnées : chiffrement en transit, contrôle d’accès, sauvegardes de l’hébergeur. Pas de transferts hors UE prévus, ou encadrés par des clauses types si nécessaire.</p>
-
-      <h3 class="mt-6 font-semibold">Cookies & statistiques (Matomo / Cloudflare)</h3>
-      <p class="leading-relaxed text-slate-700 text-sm">Nous utilisons : (1) des cookies strictement nécessaires ; (2) une mesure d’audience respectueuse via <strong>Matomo</strong> et/ou <strong>Cloudflare Web Analytics</strong>, sans cookies côté visiteur, rapports agrégés (pages vues, origine du trafic, type d’appareil), pas de publicité ni reciblage. Vous pouvez modifier votre choix via « Gérer les cookies ».</p>
-
-      <p class="mt-8 text-sm text-slate-500">Dernière mise à jour : 26 septembre 2025.</p>
-    </div>
-  </template>
-
-  <!-- Footer -->
-  <footer class="py-10 border-t border-slate-200 bg-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6">
-      <p class="text-sm text-slate-600 flex flex-wrap items-center gap-x-4 gap-y-2">
-        © <span id="year"></span> Les Ateliers du Cœur — Art‑thérapie. Tous droits réservés.
-        <a class="underline link-ink" href="?page=mentions">Mentions légales</a>
-        <span>•</span>
-        <a class="underline link-ink" href="?page=confidentialite">Politique de confidentialité</a>
-        <span>•</span>
-        <a href="#" id="manageCookiesBtn" class="underline link-ink">Gérer les cookies</a>
-      </p>
-    </div>
-  </footer>
-
+  ...
   
+  <!-- Page Mentions légales -->
+  <template id="tpl-mentions">
+    <div class="prose max-w-none">
+      <p class="eyebrow">Informations légales</p>
+      <h2 class="text-2xl md:text-3xl font-bold">Mentions légales</h2>
 
-  <!-- Cookie consent modal (inspiré du visuel, adapté au site) -->
-  <div id="cookie-banner" class="fixed inset-0 z-[60] hidden" aria-hidden="true" data-nosnippet>
-    <div class="absolute inset-0 bg-black/40"></div>
-    <div role="dialog" aria-modal="true" aria-labelledby="cookie-title" class="relative mx-auto my-10 max-w-3xl rounded-2xl bg-white shadow-xl ring-1 ring-slate-200 p-6">
-      <h3 id="cookie-title" class="text-xl font-semibold text-center">Pour une expérience plus personnalisée</h3>
-      <p class="mt-2 text-center text-slate-600 text-sm">Nous utilisons des cookies strictement nécessaires et une mesure d’audience Matomo et/ou Cloudflare Web Analytics. <a class="underline link-ink" href="#rgpd">En savoir plus</a></p>
-      <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-4 justify-items-center">
-        <!-- Catégorie: nécessaires (toujours actifs) -->
-        <label class="flex flex-col items-center gap-2 px-4 py-3 rounded-lg ring-1 ring-slate-200 w-full max-w-[13rem]">
-          <input type="checkbox" checked disabled class="h-5 w-5 rounded border-slate-300" aria-label="Strictement nécessaires activés" />
-          <span class="text-[11px] font-semibold tracking-wide">STRICTEMENT NÉCESSAIRES</span>
-        </label>
-        <!-- Catégorie: statistiques (Matomo) -->
-        <label class="flex flex-col items-center gap-2 px-4 py-3 rounded-lg ring-1 ring-slate-200 w-full max-w-[13rem]">
-          <input id="consentStats" type="checkbox" class="h-5 w-5 rounded border-slate-300" aria-label="Activer les statistiques Matomo" />
-          <span class="text-[11px] font-semibold tracking-wide">STATISTIQUES (MATOMO)</span>
-        </label>
-      </div>
-      <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-        <button id="btnNecessaryOnly" class="px-5 py-2 rounded-xl border border-slate-300 font-medium">STRICTEMENT NÉCESSAIRES</button>
-        <button id="btnAcceptAll" class="px-5 py-2 rounded-xl bg-black text-white font-semibold shadow hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2">ACCEPTER TOUT</button>
-      </div>
-      <button id="btnCookieDetails" class="mt-4 mx-auto flex items-center gap-2 text-sm text-slate-600 hover:text-ink" aria-expanded="false">
-        <span>⚙</span> AFFICHER LES DÉTAILS
-      </button>
-      <div id="cookieDetails" class="mt-3 hidden text-sm leading-relaxed text-slate-600">
-        <p><strong>Strictement nécessaires</strong> : sécurité, accessibilité, navigation (aucun suivi publicitaire).</p>
-        <p class="mt-1"><strong>Statistiques (Matomo / Cloudflare)</strong> : mesure d’audience respectueuse, <em>sans cookies côté visiteur</em>, données agrégées (pages vues, sources de trafic, type d’appareil), pas de recoupement avec d’autres services.</p>
-      </div>
+      <h3 class="mt-8 font-semibold">1) Éditeur du site</h3>
+      <p class="leading-relaxed text-slate-700">
+        Marcelin Jaanaëlle<br>
+        Adresse : Route de Sofaïa, Sainte-Rose, 97115 Guadeloupe<br>
+        Téléphone : 06 42 59 55 78<br>
+        Email : <a class="underline link-ink" href="mailto:jaa.marcelin@gmail.com">jaa.marcelin@gmail.com</a><br>
+        Statut : auto-entrepreneure (création en cours)<br>
+        SIREN : 000 000 000
+      </p>
+
+      <h3 class="mt-8 font-semibold">2) Directeur de la publication</h3>
+      <p class="leading-relaxed text-slate-700">Jaanaëlle Marcelin</p>
+
+      <h3 class="mt-8 font-semibold">3) Hébergeur</h3>
+      <p class="leading-relaxed text-slate-700">
+        Cloudflare, Inc.<br>
+        101 Townsend St, San Francisco, CA 94107, États‑Unis<br>
+        Site : <a class="underline link-ink" href="https://www.cloudflare.com" target="_blank" rel="noopener">cloudflare.com</a><br>
+        (Site hébergé via Cloudflare Pages)
+      </p>
+
+      <h3 class="mt-8 font-semibold">4) Propriété intellectuelle</h3>
+      <p class="leading-relaxed text-slate-700">Les contenus (textes, images, graphismes, logos, vidéos, icônes) sont protégés par le droit d’auteur. Toute reproduction, représentation ou adaptation, totale ou partielle, est interdite sans autorisation préalable.</p>
+
+      <h3 class="mt-8 font-semibold">5) Données personnelles</h3>
+      <p class="leading-relaxed text-slate-700">Voir notre <a class="underline link-ink" href="?page=confidentialite">Politique de confidentialité</a> (droits RGPD, finalités, bases légales, durées, destinataires).</p>
+
+      <h3 class="mt-8 font-semibold">6) Cookies & mesure d’audience</h3>
+      <p class="leading-relaxed text-slate-700">Ce site utilise des cookies strictement nécessaires et une mesure d’audience respectueuse (Matomo et/ou Cloudflare Web Analytics). Aucune finalité publicitaire. Vous pouvez gérer vos préférences via le bandeau ou le lien « Gérer les cookies ».</p>
+
+      <h3 class="mt-8 font-semibold">7) Limitation de responsabilité</h3>
+      <p class="leading-relaxed text-slate-700">Les informations sont fournies à titre indicatif. L’éditeur ne saurait être tenu responsable des erreurs, omissions, ou indisponibilités temporaires. Les liens externes n’engagent pas sa responsabilité.</p>
+
+      <h3 class="mt-8 font-semibold">8) Droit applicable & litiges</h3>
+      <p class="leading-relaxed text-slate-700">Le site est soumis au droit français. Compétence des tribunaux de Guadeloupe sous réserve des règles impératives.</p>
+
+      <h3 class="mt-8 font-semibold">9) Conception et réalisation</h3>
+      <p class="leading-relaxed text-slate-700">
+        Site conçu et développé par Barclais Précilia Marie-Camille<br>
+        Contact : <a class="underline link-ink" href="mailto:precilia.barclais.business@gmail.com">precilia.barclais.business@gmail.com</a>
+      </p>
+
+      <p class="mt-8 text-sm text-slate-500">Dernière mise à jour : 30 septembre 2025.</p>
     </div>
-  </div>
+  </template>
 
-  <!-- JSON‑LD (Organization + FAQ) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Les Ateliers du Cœur",
-    "url": "https://les-ateliers-du-coeur.com/",
-    "areaServed": "Guadeloupe",
-    "sameAs": [
-      "https://www.instagram.com/les.ateliers.du.coeurs__",
-      "https://www.linkedin.com/in/jaanaelle-marcelin-0b0a1118b"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Comment se déroulent les ateliers ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Séances de 60–90 min, avec accueil, activité créative adaptée (peinture, collage, modelage…), temps de partage et rangement. Cycle possible sur 4–8 séances avec objectifs définis."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Où intervenez‑vous ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "En EHPAD, résidences autonomie, associations, collectivités et à domicile, dans votre département et alentours (sur devis)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Le matériel est‑il fourni ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Oui, matériel non toxique et adapté, inclus dans la plupart des prestations. Besoins spécifiques possibles selon projet."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quels sont les tarifs ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tarification selon le format (individuel/collectif), la durée et le déplacement. Un devis clair est fourni avant toute intervention."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Politique d’annulation",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sans frais jusqu’à 48 h avant. Au‑delà, des frais peuvent s’appliquer pour couvrir la planification et le matériel prévu."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Scripts externes -->
-  <script src="/assets/app.js" defer></script>
 </body>
 </html>
