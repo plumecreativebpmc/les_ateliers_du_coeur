@@ -57,11 +57,16 @@
   
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "52c66c9f9b3a4ecfa06fafe5f36d257b"}'></script><!-- End Cloudflare Web Analytics -->
 
-<!-- Fixe largeur paragraphe — Page Approche -->
+<!-- Fix largeur paragraphe — Page Approche -->
 <style id="approche-wide-fix">
-  #page-root .approche-wide p { max-width: none !important; }
+  #page-root .approche-wide,
+  #page-root .approche-wide p {
+    max-width: none !important;
+    width: auto !important;
+  }
   #page-root .approche-wide p + p { margin-top: 0.75rem; } /* = mt-3 */
 </style>
+
 </head>
 <body class="bg-paper text-ink antialiased">
   <div id="progressBar" class="fixed top-0 left-0 h-1 bg-brand z-[70]" style="width:0%"></div>
