@@ -1,0 +1,14 @@
+# Traiter les fichiers texte en UTF-8 avec fins de ligne LF côté repo
+* text=auto eol=lf
+
+# Marquer les polices et images comme binaires
+*.woff2 binary
+*.woff  binary
+*.ttf   binary
+*.otf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+
+# SVG en texte (diff possible), EOL normalisées
+*.svg   text eol=lf
