@@ -1,3 +1,51 @@
+#python
 download_fonts_fixed.py
+
+# --- Système / OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Dépendances / outils ---
 node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# --- Builds & caches (générés, recréables) ---
+dist/
+build/
+.cache/
+.parcel-cache/
+.vite/
+coverage/
+
+# --- Cloudflare / outils locaux ---
+.wrangler/
+functions/.wrangler/
+# (on garde ton code de fonctions !)
+# functions/**/node_modules/ sera ignoré par node_modules/ ci-dessus
+
+# --- Logs & temporaires ---
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tmp
+*.temp
+
+# --- Environnement (ne jamais committer de secrets) ---
+.env
+.env.*
+!.env.example
+
+# --- Éditeurs ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+#---Sourcemaps---
+*.map
+
+
