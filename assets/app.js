@@ -16,6 +16,15 @@
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   // Helpers router
+  function setPageTitle(page){
+    const base='Les Ateliers du Cœur';
+    let t=base;
+    if(page==='approche') t='Approche — '+base;
+    else if(page==='mentions') t='Mentions légales — '+base;
+    else if(page==='temoignages') t='Témoignages — '+base;
+    else if(page==='contact') t='Contact — '+base;
+    document.title=t;
+  }
   function setActiveNav(page){
     const links = document.querySelectorAll('nav[aria-label="Navigation principale"] a, #menuMobile a');
     links.forEach(a=>{
@@ -31,6 +40,12 @@
     const h = document.documentElement.scrollHeight - window.innerHeight;
     const p = h>0 ? (window.scrollY / h) * 100 : 0;
     bar.style.width = p + '%';
+  }
+  function focusFirstHeading(root){
+    const h = root?.querySelector('h1, h2, [role="heading"]');
+    if(!h) return;
+    h.setAttribute('tabindex','-1');
+    h.focus({preventScroll:true});
   }
   function initCarousel(){
     const root = document.getElementById('carousel-temoignages');
@@ -63,6 +78,8 @@
     replace ? history.replaceState({}, '', url) : history.pushState({}, '', url);
     closeMenu();
     setActiveNav('home');
+    setPageTitle('home');
+    focusFirstHeading(document);
     window.scrollTo({top:0, behavior:'smooth'});
     updateProgress();
   }
@@ -79,6 +96,8 @@
     replace ? history.replaceState({page}, '', url) : history.pushState({page}, '', url);
     closeMenu();
     setActiveNav(page);
+    setPageTitle(page);
+    focusFirstHeading(view);
     window.scrollTo({top:0, behavior:'smooth'});
     updateProgress();
     if(page==='temoignages'){ initCarousel(); }
@@ -101,7 +120,9 @@
     const page = url.searchParams.get('page');
     if(page){ renderPage(page, true); }
     else if(location.hash){ const id = location.hash.slice(1); showHome(true); requestAnimationFrame(()=>document.getElementById(id)?.scrollIntoView({behavior:'smooth'})); }
-    else { setActiveNav('home'); }
+    else { setActiveNav('home');
+    setPageTitle('home');
+    focusFirstHeading(document); }
     // Cookies banner init + barre de progression
     initCookies();
     updateProgress();
