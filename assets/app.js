@@ -86,53 +86,8 @@
   }
 
   // Navigation par clic (pages & ancres)
-  
-  // Navigation par clic (pages & ancres) — version robuste
   document.addEventListener('click', (e) => {
-    const a = e.target.closest('a');
-    if(!a) return;
-
-    // 1) Liens type ?page=...
-    if(a.matches('a[href^="?page="]')){
-      e.preventDefault();
-      const p = new URL(a.href, location).searchParams.get('page');
-      renderPage(p, false);
-      return;
-    }
-
-    // 2) Lien accueil '?'
-    if(a.getAttribute('href') === '?'){
-      e.preventDefault();
-      showHome(false);
-      return;
-    }
-
-    // 3) Variantes courantes du footer: '/mentions', '#/mentions', '#mentions', 'mentions.html', etc.
-    const href = a.getAttribute('href') || '';
-    const clean = href.replace(location.origin, '');
-
-    const map = [
-      { test: /(^|[\/#?])mentions(\.html)?(#.*)?$/i, page: 'mentions' },
-      { test: /(^|[\/#?])approche(\.html)?(#.*)?$/i, page: 'approche' },
-    ];
-
-    for(const {test, page} of map){
-      if(test.test(clean)){
-        e.preventDefault();
-        renderPage(page, false);
-        return;
-      }
-    }
-
-    // 4) Ancres internes : '#...'
-    if(href.startsWith('#')){
-      e.preventDefault();
-      const id = href.slice(1);
-      showHome(false);
-      requestAnimationFrame(()=> document.getElementById(id)?.scrollIntoView({behavior:'smooth'}));
-    }
-  });
-
+    const pageLink = e.target.closest('a[href^="?page="]');
     if(pageLink){ e.preventDefault(); const p=new URL(pageLink.href, location).searchParams.get('page'); renderPage(p, false); return; }
     const homeLink = e.target.closest('a[href="?"]');
     if(homeLink){ e.preventDefault(); showHome(false); return; }
