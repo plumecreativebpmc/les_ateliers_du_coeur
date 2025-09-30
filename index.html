@@ -50,10 +50,18 @@
       }}
     }};
   </script>
+  
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="/assets/styles.css">
+  
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "52c66c9f9b3a4ecfa06fafe5f36d257b"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- Fixe largeur paragraphe — Page Approche -->
+<style id="approche-wide-fix">
+  #page-root .approche-wide p { max-width: none !important; }
+  #page-root .approche-wide p + p { margin-top: 0.75rem; } /* = mt-3 */
+</style>
 </head>
 <body class="bg-paper text-ink antialiased">
   <div id="progressBar" class="fixed top-0 left-0 h-1 bg-brand z-[70]" style="width:0%"></div>
@@ -224,7 +232,7 @@
         <p class="eyebrow">Méthode</p>
         <h2 class="text-2xl md:text-3xl font-bold">Un voyage créatif où l’art ouvre des espaces de rencontre et relie les histoires</h2>
         <p class="dropcap mt-4 leading-relaxed text-slate-700">Une approche qui utilise l’art comme support d’expression et d’accompagnement thérapeutique, dans un cadre rassurant, avec des outils variés (collage, peinture, modelage, écriture) adaptés aux envies et aux capacités de chacun.</p>
-        <div class="mt-4 leading-relaxed text-slate-700 [&>p]:!max-w-none [&>p+p]:mt-3">
+        <div class="mt-4 leading-relaxed text-slate-700 approche-wide">
           <p>L’art-thérapie repose sur une posture d’écoute bienveillante, sans jugement, où le processus créatif compte davantage que le résultat.</p>
 
           <p>Un cadre sécurisant et confidentiel garantit stabilité et confiance, soutenu par l’utilisation de matériel simple, accessible et non toxique.</p>
